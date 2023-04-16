@@ -19,7 +19,6 @@ class Stack {
 
   push(element) {
     this.items.push(element);
-    console.log(this.items);
   }
 
   pop() {
