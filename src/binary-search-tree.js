@@ -43,7 +43,7 @@ class BinarySearchTree {
   }
 
   find(data, parentNode = null) {
-    console.log(data, parentNode);
+    //console.log(data, parentNode);
 
     let node;
     if (parentNode) {
@@ -182,18 +182,18 @@ module.exports = {
 // // assert.strictEqual(tree.has(1), true);
 // //console.log(tree.has(1));
 
-const { values } = getTestingTools(20);
-const tree = new BinarySearchTree();
-values.forEach((value) => tree.add(value));
-values.sort((a, b) => (a % 2) - (b % 2) || a - b);
-const valuesToRemove = values.splice(0, 10);
-valuesToRemove.forEach((value) => tree.remove(value));
-// assert.strictEqual(
-//   valuesToRemove.every((value) => tree.has(value) === false),
-//   true
-// );
-console.log(valuesToRemove);
-// assert.strictEqual(
-//   values.every((value) => tree.has(value) === true),
-//   true
-// );
+// const { values } = getTestingTools(20);
+// const tree = new BinarySearchTree();
+// values.forEach((value) => tree.add(value));
+// values.sort((a, b) => (a % 2) - (b % 2) || a - b);
+// const valuesToRemove = values.splice(0, 10);
+// valuesToRemove.forEach((value) => tree.remove(value));
+// // assert.strictEqual(
+// //   valuesToRemove.every((value) => tree.has(value) === false),
+// //   true
+// // );
+// console.log(valuesToRemove);
+// // assert.strictEqual(
+// //   values.every((value) => tree.has(value) === true),
+// //   true
+// // );
